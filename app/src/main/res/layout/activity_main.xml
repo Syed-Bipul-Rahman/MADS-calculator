@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1pt"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:ems="10"
+        android:gravity="right|center"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textSize="40sp" />
+
+    <TableLayout
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt">
+
+            <Button
+                android:id="@+id/allClear"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/bg_clear"
+                android:text="AC"
+                android:onClick="allClear"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </Button>
+
+            <Button
+                android:id="@+id/plusMinus"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="nuberShow"
+                android:background="@drawable/bg_oparator"
+                android:text="+/-"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/devide"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/bg_oparator"
+                android:text="/"
+                android:onClick="oparatorFuntional"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/multipliedby"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:onClick="oparatorFuntional"
+                android:layout_weight="1"
+                android:background="@drawable/bg_oparator"
+                android:text="*"
+                android:textSize="20sp">
+
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt">
+
+            <Button
+                android:id="@+id/btn_seven"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/bg_general"
+                android:onClick="nuberShow"
+                android:text="7"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_eight"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/bg_general"
+                android:onClick="nuberShow"
+                android:text="8"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_nine"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/bg_general"
+                android:onClick="nuberShow"
+                android:text="9"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_persentage"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/bg_oparator"
+                android:onClick="modulasOparator"
+                android:text="%"
+                android:textSize="20sp">
+
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt">
+
+            <Button
+                android:id="@+id/btn_four"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/bg_general"
+                android:onClick="nuberShow"
+                android:text="4"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_five"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/bg_general"
+                android:onClick="nuberShow"
+                android:text="5"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_six"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/bg_general"
+                android:onClick="nuberShow"
+                android:text="6"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_plus"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="oparatorFuntional"
+                android:background="@drawable/bg_oparator"
+                android:text="+"
+                android:textSize="20sp">
+
+            </Button>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1pt">
+
+            <Button
+                android:id="@+id/btn_one"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/bg_general"
+                android:onClick="nuberShow"
+                android:text="1"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_two"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/bg_general"
+                android:onClick="nuberShow"
+                android:text="2"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_three"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@drawable/bg_general"
+                android:onClick="nuberShow"
+                android:text="3"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="oparatorFuntional"
+                android:background="@drawable/bg_oparator"
+                android:text="-"
+                android:textSize="20sp">
+
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:background="@color/gray">
+
+        <Button
+            android:id="@+id/btn_zero"
+            android:layout_width="85pt"
+            android:layout_height="30pt"
+            android:layout_marginRight="1pt"
+            android:background="@drawable/bg_general"
+            android:onClick="nuberShow"
+            android:text="0"
+            android:textSize="20sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_dot"
+            android:layout_width="43pt"
+            android:layout_height="30pt"
+            android:layout_marginRight="1pt"
+            android:background="@drawable/bg_general"
+            android:onClick="nuberShow"
+            android:text="."
+            android:textSize="20sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_equal"
+            android:layout_width="50pt"
+            android:layout_height="30pt"
+            android:layout_marginRight="1pt"
+            android:background="@drawable/bg_oparator"
+            android:onClick="equalEvent"
+            android:text="="
+            android:textSize="20sp">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
